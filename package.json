@@ -1,0 +1,13 @@
+{
+  "name": "wao",
+  "version": "1.69.420",
+  "description": "wao",
+  "main": "fockit.js",
+  "scripts": {
+    "wao": "git checkout -b wao && node fockit.js && echo $(git config user.name) >> CONTRIBUTORS && git commit -am 'WAO' --no-gpg-sign --no-verify && git push"
+  },
+  "license": "FOCKIT",
+  "dependencies": {
+    "image-pixels": "^2.2.2"
+  }
+}
