@@ -4,7 +4,7 @@ const pixels = require("image-pixels");
 const INTENSITY = process.env.INTENSITY
   ? parseInt(process.env.INTENSITY, 10)
   : 69;
-const MESSAGES = ["fock it", "focking wao", "wao"];
+const MESSAGES = ["look ma", "solana mobile", "give me a raise", "Im so cool"];
 
 // The first grid in the GitHub contributions grid is the previous Sunday, one year ago.
 function getSundaySomeWeeksAgo(numWeeksAgo) {
@@ -30,7 +30,7 @@ function getSundaySomeWeeksAgo(numWeeksAgo) {
 }
 
 (async function () {
-  const image = await pixels("ml.png");
+  const image = await pixels("graph.png");
   if (image.width !== 52 && image.height !== 7) {
     throw new Error("Input image must be 52x7px");
   }
